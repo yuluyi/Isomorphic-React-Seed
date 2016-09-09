@@ -1,0 +1,70 @@
+@import '~#/desktop/style/reset.scss';
+@import '~#/desktop/style/variable.scss';
+@import "~photoswipe/dist/photoswipe.css";
+@import "~photoswipe/dist/default-skin/default-skin.css";
+
+#app {
+  width: 100%;
+  min-height: 100%;
+}
+
+body > * {
+  display: none!important;
+}
+
+body {
+  #app, #gallery {
+    display: initial!important;
+  }
+}
+
+:local .base {
+  overflow: auto;
+  width: 100%;
+  min-height: 100%;
+}
+
+[data-fixed="true"] {
+  height: 100%;
+  overflow: hidden;
+}
+
+/*利用media query 和 rem来做等比缩放*/
+html, body {
+  font-size: 10px;
+  min-height: 100%;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: auto;
+  background-color: $background-color;
+}
+
+@media screen and (min-width: 1400) {
+  html {
+    font-size: (100px * 1400 / 1440);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+html {
+  font-size: (100vw / 1440 * 100);
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 1344px) {
+  html {
+    font-size: (100px * 1344 / 1440);
+  }
+}

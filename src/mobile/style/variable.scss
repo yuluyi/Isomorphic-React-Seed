@@ -1,0 +1,21 @@
+$background-color: #edeef1;
+
+$header-height: 1.05rem;
+$header-padding: 0.3rem;
+
+$default-vertical-spacing: 0.1rem;
+
+$default-box-shadow: 0 0.02rem 0.04rem 0 rgba(0, 0, 0, 0.08);
+
+
+@mixin thumbnail-background {
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+}
+
+
+$dt-orange: #FF5733;
+$dt-font-grey: #C5C6C6;
+
+$app-banner-height: 1rem;

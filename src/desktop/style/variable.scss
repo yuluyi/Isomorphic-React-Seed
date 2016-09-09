@@ -1,0 +1,10 @@
+$background-color: #F4F4F4;
+$header-height: 50px;
+
+@mixin thumbnail-background {
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+}
+
+$max-container-width: 1170px;

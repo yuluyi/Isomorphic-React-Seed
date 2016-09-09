@@ -1,0 +1,78 @@
+:local .loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 14px;
+  color: #999;
+  line-height: 50px;
+  text-align: center;
+
+  .UFO {
+    width: 141px;
+    height: 73px;
+    background: url(./UFO.png) no-repeat;
+    background-size: contain;
+  }
+
+  .light {
+    width: 60px;
+    height: 100px;
+    margin: 0 auto;
+    background: url(./light.png) no-repeat;
+    background-size: contain;
+    animation: switch 3s ease-in-out infinite;
+  }
+
+  .D-sir {
+    position: absolute;
+    right: 53px;
+    bottom: 120px;
+    width: 34px;
+    height: 37px;
+    background: url(./D.png) no-repeat;
+    background-size: contain;
+    animation: float 3s ease-in-out infinite;
+  }
+}
+
+@keyframes :local(switch) {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes :local(float) {
+  0% {
+    transform: translate(0, 0) scale(0);
+  }
+  15% {
+    transform: translate(0, 0) scale(0);
+  }
+  50% {
+    transform: translate(0, 65px) scale(1);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(53px, 65px) scale(1);
+  }
+}

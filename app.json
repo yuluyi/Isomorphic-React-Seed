@@ -1,0 +1,20 @@
+{
+  "name": "HugoPage",
+  "script": "server.js",
+  "out_file": "log/stdout.log",
+  "error_file": "log/error.log",
+  "merge_logs": true,
+  "log_date_format": "YYYY-MM-DD HH:mm:ss Z",
+  "node_args": ["--use_strict", "--harmony", "--max-old-space-size=256"],
+  "env_test": {
+    "NODE_ENV": "development",
+    "HOSTNAME": "xxx.dtcj.com",
+    "__TEST__": true,
+    "PORT": 4000
+  },
+  "env_production": {
+    "NODE_ENV": "production",
+    "HOSTNAME": "www.dtcj.com",
+    "PORT": 4000
+  }
+}
