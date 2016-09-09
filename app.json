@@ -1,5 +1,5 @@
 {
-  "name": "HugoPage",
+  "name": "ReactIsomorphicSeed",
   "script": "server.js",
   "out_file": "log/stdout.log",
   "error_file": "log/error.log",
@@ -8,13 +8,13 @@
   "node_args": ["--use_strict", "--harmony", "--max-old-space-size=256"],
   "env_test": {
     "NODE_ENV": "development",
-    "HOSTNAME": "xxx.dtcj.com",
+    "HOSTNAME": "dev_hostname",
     "__TEST__": true,
     "PORT": 4000
   },
   "env_production": {
     "NODE_ENV": "production",
-    "HOSTNAME": "www.dtcj.com",
+    "HOSTNAME": "hostname",
     "PORT": 4000
   }
 }
